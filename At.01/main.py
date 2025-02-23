@@ -1,8 +1,8 @@
-from modelos.agencia import conta
+from modelos.agencia import Agencia
 
 # exemplos
-conta_1 = conta('itau','001',9999)
-conta_2 = conta('bb','002',76767)
+conta_1 = Agencia('itau','001',9999)
+conta_2 = Agencia('bb','002',76767)
 # exemplos
 
 def main():
@@ -12,7 +12,7 @@ def main():
 
     conta_1.alternar_estado()
 
-    conta.listar_contas()
+    Agencia.listar_contas()
 
 if __name__ == '__main__':
     main()
