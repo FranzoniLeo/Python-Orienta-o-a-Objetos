@@ -1,13 +1,13 @@
 from modelos.banco import Bancos
 
-class conta(Bancos):
+class Agencia(Bancos):
     contas = []
 
     def __init__(self, _nome_do_banco, _agencia, numero_da_conta):
         super().__init__(_nome_do_banco, _agencia)
         self._numero_da_conta = numero_da_conta
         self._ativa = False
-        conta.contas.append(self)
+        Agencia.contas.append(self)
     
     def __str__(self):
         return f'{self._nome_do_banco.ljust(25)} | {self._agencia.ljust(25)} | {str(self._numero_da_conta).ljust(25)} | {self._ativa}'
